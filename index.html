@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+<title>Gaming Website</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous">
+  </script>
+   <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+
+  <style>
+    body 
+    {
+        background: url(http://static.wixstatic.com/media/56b41b_ed4c304c7a71412b92bee7e0446f5dbc.jpg_srz_976_2000_85_22_0.50_1.20_0.00_jpg_srz);
+        font-family: helvetica, sans-serif;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    div 
+    {
+      height: 200px;
+      position: relative;
+      margin: 40px 0 0 0;
+      border-radius: 12px;
+      background-size: cover;
+    }
+    h1
+    {
+      font-family: 'VT323', monospace;
+      text-align: center;
+      font-size: 75px;
+      color: rgba(124,202,0,1);
+      margin: 60px 0 0 0;
+    }
+    h2
+    {
+      font-family: 'Lemonada', cursive;
+      text-align: center;
+      color:  #800080;
+      margin: 20px 0 50px 0;
+    }
+    p
+    {
+      color: rgba(250,230,200,1);
+      background: black;
+      background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      padding: 10px;
+      line-height: 28px;
+      text-align: justify;
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      height: 30px;
+      transition: height .5s;
+      -webkit-transition: height .5s;
+      -moz-transition: height .5s;
+    }
+    small
+    {
+      opacity: 0;
+    }
+    .show-description p 
+    {
+      height: 150px;
+    }
+    .show-description small 
+    {
+      opacity: 1;
+    }
+    .nfs
+    {
+      background-image: url("https://i.ytimg.com/vi/fNC66njKCV8/maxresdefault.jpg");
+    }
+    .gta
+    {
+      background-image: url("https://cdn.shopify.com/s/files/1/0567/5049/files/gta-v-cash-rank.png?v=1478558160");
+    }
+    .cod
+    {
+      background-image: url("http://cdn.wegotthiscovered.com/wp-content/uploads/call-of-duty-black-ops-2-box-600px-fixed.jpg");
+    }
+    .price
+    {
+      float: right;
+    }
+    @media (max-width: 500px)
+    {
+      h1
+      {
+        font-size: 50px;
+        margin-top: 20px;
+        line-height: 40px;
+      }
+      h2
+      {
+        font-size: 20px;
+        margin: 20px 0 30px 0;
+      }
+      div
+      {
+        margin: 20px 12px 0 12px;
+      }
+      p
+      {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      small
+      {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Transcendence</h1>
+  <h2>Get lost in the virtual world.</h2>
+
+  <div class="nfs">
+  <p>Need for Speed: Most Wanted <span class="price">Rs 499</span><br />
+  <small>Need for Speed: Most Wanted is an open world racing game developed by Criterion Games and published by Electronic Arts (EA). Need for Speed: Most Wanted received positive reviews, which focused on the world map that blended the styles of previous Burnout and Need for Speed games, and the social features, while criticism fell on the single-player mode. </small></p>
+  </div>
+
+  <div class="gta">
+  <p>Grand Theft Auto V<span class="price">Rs 799</span><br />
+  <small>Grand Theft Auto V is an action-adventure video game developed by Rockstar North and published by Rockstar Games.
+  The game is played from either a first-person or third-person view and its world is navigated on foot or by vehicle. Players control the three lead protagonists throughout single-player and switch between them both during and outside of missions.</small></p>
+  </div>
+
+  <div class="cod">
+  <p>Call of Duty: Black Ops II<span class="price">Rs 999</span><br />
+  <small>Call of Duty: Black Ops II is a first-person shooter video game, developed by Treyarch and published by Activision.Black Ops II is the first game in the Call of Duty franchise to feature future warfare technology and the first to present branching storylines driven by player choice as well as selecting weapons before starting story mode missions.</small></p>
+  </div>
+
+  <script>
+    $('div').hover(function()
+    {
+      $(this).toggleClass('show-description');
+    }
+    );
+  </script>
+</body>
